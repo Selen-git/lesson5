@@ -1,1 +1,5 @@
+await page.goto('http://uitestingplayground.com/dinamicid');
 
+const button = await page.waitForXPath("//button[contains(text(), 'infinite Scroll')]");
+
+await button.click()
