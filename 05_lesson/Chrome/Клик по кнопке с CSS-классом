@@ -1,1 +1,16 @@
+document.addEventListener('DOMContentLoaded', function() {
 
+var button = document.querySelektor('.button-primary');
+
+if(button) {
+    function clickButton() {
+        button.click();
+    }
+    
+    clickButton();
+    clickButton();
+    clickButton();
+} else {
+    console.error('Кнопка не найдена');
+    }
+});
